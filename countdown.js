@@ -1,6 +1,8 @@
+// Tu pensais pas que ce serait si facile non?
 const countDownElement = document.getElementById("countdown")
 
-var i = 1562450400000
+var i = parseInt(atob("MTU2MjQ1MDQwMDAwMA=="))
+
 function updateCountdown() {
     var currentTime = new Date().getTime()
     countDownElement.textContent=i-currentTime
