@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dernière étape</title>
+</head>
+<body>
+    <textarea id="code" rows="30" style="width: 100%">var t="RoKien9tJIS2JHG{JIMqeYO{bTCtZTCl[YKvbfiz[TEqeHGx[T6Vc35hZ3Gl[XG2JHW{eDCk[TCvc31h[HVh[H:uZXmv[UpheHim[3iqd3yibX5v[oJhJR>>";
+const result = ""
+for(i = 0; i < 20; i+=2) {
+  result += String.fromCharCode(t.charCodeAt(i) - 1)
+}
+alerte(atob(result))
+</textarea>
+    <button id="run">Exécuter le code</button>
+<script>
+const code = document.getElementById("code")
+const run = document.getElementById("run")
+run.addEventListener("click", function() {
+    try {
+        eval(code.value)
+    } catch(e) {
+        alert(e)
+    }
+})
+</script>
+</body>
+</html>
